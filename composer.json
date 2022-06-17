@@ -15,7 +15,7 @@
     "require": {
         "php": "^7.4",
         "jfb/handlebars": "^2.0",
-        "visol/translationapi": "v11.x-dev"
+        "visol/translationapi": "^3"
     },
     "require-dev": {
     },

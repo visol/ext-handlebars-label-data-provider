@@ -1,5 +1,5 @@
 {
-    "name": "jfb/handlebars-label-data-provider",
+    "name": "visol/typo3-handlebars-label-data-provider",
     "description": "Auto inject labels from the sinso/translationapi",
     "type": "typo3-cms-extension",
     "homepage": "",
@@ -7,14 +7,14 @@
     "preferred-install": "dist",
     "autoload": {
         "psr-4": {
-            "JFB\\HandlebarsLabelDataProvider\\": "Classes/"
+            "Visol\\HandlebarsLabelDataProvider\\": "Classes/"
         }
     },
     "suggest": {
     },
     "require": {
         "php": "^7.4",
-        "jfb/handlebars": "^2.0",
+        "jfb/handlebars": "*",
         "visol/translationapi": "^3"
     },
     "require-dev": {

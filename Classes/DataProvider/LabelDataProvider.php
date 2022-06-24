@@ -1,5 +1,5 @@
 <?php
-namespace JFB\HandlebarsLabelDataProvider\DataProvider;
+namespace Visol\HandlebarsLabelDataProvider\DataProvider;
 
 /***************************************************************
  *  Copyright notice
@@ -26,7 +26,7 @@ namespace JFB\HandlebarsLabelDataProvider\DataProvider;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-use JFB\Handlebars\DataProvider\AbstractDataProvider;
+use Visol\Handlebars\DataProvider\AbstractDataProvider;
 use Sinso\Translationapi\Utility\LocalizationUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

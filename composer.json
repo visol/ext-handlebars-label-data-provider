@@ -14,7 +14,7 @@
     },
     "require": {
         "php": "^7.4",
-        "jfb/handlebars": "*",
+        "visol/typo3-handlebars": "^3 | dev-master",
         "visol/translationapi": "^3"
     },
     "require-dev": {

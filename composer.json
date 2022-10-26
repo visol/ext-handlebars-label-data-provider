@@ -2,22 +2,16 @@
     "name": "visol/typo3-handlebars-label-data-provider",
     "description": "Auto inject labels from the sinso/translationapi",
     "type": "typo3-cms-extension",
-    "homepage": "",
-    "license": "GPL-2.0+",
-    "preferred-install": "dist",
+    "license": "GPL-2.0-or-later",
     "autoload": {
         "psr-4": {
             "Visol\\HandlebarsLabelDataProvider\\": "Classes/"
         }
     },
-    "suggest": {
-    },
     "require": {
-        "php": "^7.4",
+        "php": "~7.4.0 || ~8.0.0 || ~8.1.0",
         "visol/typo3-handlebars": "^3 | dev-master",
         "visol/translationapi": "^3"
-    },
-    "require-dev": {
     },
     "extra": {
         "typo3/cms": {

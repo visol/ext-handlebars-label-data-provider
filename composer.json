@@ -11,7 +11,7 @@
     "require": {
         "php": ">= 8.0 < 8.4",
         "visol/typo3-handlebars": "^3 || dev-master || dev-feature/update-v12",
-        "visol/translationapi": "^3 || dev-v12 || 12.x-dev"
+        "visol/translationapi": "^4"
     },
     "extra": {
         "typo3/cms": {

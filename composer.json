@@ -10,7 +10,7 @@
     },
     "require": {
         "php": ">= 8.0 < 8.4",
-        "visol/typo3-handlebars": "^3 || dev-master || dev-feature/update-v12",
+        "visol/typo3-handlebars": "^4",
         "visol/translationapi": "^4"
     },
     "extra": {

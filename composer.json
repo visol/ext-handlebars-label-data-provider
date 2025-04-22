@@ -9,9 +9,9 @@
         }
     },
     "require": {
-        "php": "~7.4.0 || ~8.0.0 || ~8.1.0",
-        "visol/typo3-handlebars": "^3 | dev-master",
-        "visol/translationapi": "^3"
+        "php": ">= 8.0 < 8.4",
+        "visol/typo3-handlebars": "^4",
+        "visol/translationapi": "^4"
     },
     "extra": {
         "typo3/cms": {

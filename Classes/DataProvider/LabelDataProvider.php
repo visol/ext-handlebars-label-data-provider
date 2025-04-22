@@ -52,20 +52,24 @@ class LabelDataProvider extends AbstractDataProvider
      *
      * @return array
      */
-    protected function getLabels()
+    protected function getLabels(): array
     {
         $extensionKey = $this->settings['extensionKey'];
         $controllerName = $this->settings['controllerName'];
         $actionName = $this->settings['actionName'];
 
-        $labels = LocalizationUtility::getLabels($extensionKey, $controllerName . '.' . $actionName);
-        foreach ($labels as $key => $label) {
-            $formattedKey = str_replace($controllerName . '.' . $actionName . '.', '', $key);
-            $labels[$formattedKey] = $label; // For convenience sake keep both
-            $this->transformMultiDimensionalObject($labels, $formattedKey, $label);
-        }
+        try {
+            $labels = LocalizationUtility::getLabels($extensionKey, $controllerName . '.' . $actionName);
+            foreach ($labels as $key => $label) {
+                $formattedKey = str_replace($controllerName . '.' . $actionName . '.', '', $key);
+                $labels[$formattedKey] = $label; // For convenience sake keep both
+                $this->transformMultiDimensionalObject($labels, $formattedKey, $label);
+            }
 
-        return $labels;
+            return $labels;
+        } catch (\Exception $e) {
+            return [];
+        }
     }
 
     /**
